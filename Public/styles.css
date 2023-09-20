@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    flex-direction: column;
+}
+.ButtonHolder a{
+    text-decoration: none;
+    background-color: rgb(80, 77, 77);
+    color: white;
+    padding:25px;
+    cursor: pointer;
+    width: 250px;
+}
+.ButtonHolder input{
+    height: 40px;
+    font-size: 25px;
+}
+.ButtonHolder h1{
+    text-align: center;
+}
+.ButtonHolder{
+    background-color: black;
+    width: 300px;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
