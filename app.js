@@ -5,13 +5,16 @@ const Users = require('./models/Users');
 const bodyParser= require('body-parser')
 const port = process.env.port || 3000;
 const app = express();
+require('dotenv').config()
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
 app.use(express.static(__dirname + '/Public'));
 
-const uri = "mongodb+srv://kkelle832:avq1V0vjXy0X0Z0Y@cluster0.ebsnw8y.mongodb.net/Registration-test";
+
+
+const uri = `mongodb+srv://kkelle832:${process.env.PASSWORD}@cluster0.ebsnw8y.mongodb.net/Registration-test`;
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -20,7 +23,7 @@ app.use(bodyParser.json());
 mongoose.connect(uri).then(()=>{
      console.log('Connected')
 }).catch(err=>{
-  console.log(err)
+ /// console.log(err)
 })
 
 app.get('/NewUser',(req,res)=>{
