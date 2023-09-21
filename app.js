@@ -88,7 +88,7 @@ app.get('/Edit/:id',async(req,res)=>{
 app.post('/FinishEdit/:id',async(req,res)=>{
   var User = await Users.findByIdAndUpdate(req.params.id,req.body);
   var UpdatedUser = await Users.findById(req.params.id)
-  res.render('home',{User:UpdatedUser});
+  res.render('Home',{User:UpdatedUser});
 })
 
 
