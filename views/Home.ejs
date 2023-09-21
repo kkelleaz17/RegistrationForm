@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= User.Name %></title>
 </head>
-<link rel="stylesheet" href="./styles.css" />
+<link rel="stylesheet" href="/styles.css" />
 <body>
     <div class="ButtonHolder">
     <h1> Welcome <%= User.Name %> </h1>
@@ -16,10 +16,10 @@
         <li> Address: <%= User.Address %></li>
         <li>Age: <%= User.Age %></li>
     </ul>
-    <a href="/">Home</a>
     <a href="/Delete/<%= User._id %>">Delete this account</a>
     <a href="/Edit/<%= User._id %>">Edit this account</a>
     </div>
+    <a href="/" class="home">Home</a>
 </body>
 
 </html>

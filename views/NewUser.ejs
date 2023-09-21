@@ -8,23 +8,29 @@
 
 </head>
 <body>
-    <form method="post" action="./NewUser" class="ButtonHolder" >
+    <form method="post" action="./NewUser" class="Registration" >
         <h1>Register</h1>
-        <label>Name:</label>
-        <input type="text" name="Name" minlength="5"  maxlength="30" required/>
-        <label>Phone:</label>
-        <input type="tel" name="Phone" minlength="5"  maxlength="30" required/>
-        <label>Address:</label>
-        <input type="text" name="Address" minlength="5"  maxlength="30" required/>
-        <label>Age:</label>
-        <input type="number" name="Age" max="100" min="10" required/>
-        <label>Email:</label>
-        <input type="email" name="Email" minlength="5"  maxlength="30" required/>
-        <label>Password:</label>
-        <input type="password" name="Password" minlength="5" maxlength="30" required/>
-        <input type="submit" value="Register" />
+        <div class="Inside">
+        <div>
+            <label>Name:</label>
+            <input type="text" name="Name" minlength="5"  maxlength="30" required/>
+            <label>Phone:</label>
+            <input type="tel" name="Phone" minlength="5"  maxlength="30" required/>
+            <label>Address:</label>
+            <input type="text" name="Address" minlength="5"  maxlength="30" required/>
+        </div>
+        <div>
+            <label>Age:</label>
+            <input type="number" name="Age" max="100" min="10" required/>
+            <label>Email:</label>
+            <input type="email" name="Email" minlength="5"  maxlength="30" required/>
+            <label>Password:</label>
+            <input type="password" name="Password" minlength="5" maxlength="30" required/>
+        </div>
+        </div>
+        <input type="submit" value="Register" class="Register"/>
     </form>
-    <a href="/">Home</a>
+    <a href="/" class="home">Home</a>
 
 </body>
 </html>
